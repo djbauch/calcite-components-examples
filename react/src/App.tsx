@@ -19,11 +19,11 @@ function App() {
       </h1>
       <CalciteButton onClick={(e) => setSliderValue(0)}>Reset</CalciteButton>
       <CalciteSlider
-        min="1"
-        max="100"
+        min={1}
+        max={100}
         value={sliderValue}
-        step="1"
-        onCalciteSliderInput={(e) => setSliderValue(e.target.value)}
+        step={1}
+        onCalciteSliderInput={(e) => setSliderValue(e.target.value as number)}
       />
       <p>The slider currently has a value of {sliderValue}</p>
     </>
